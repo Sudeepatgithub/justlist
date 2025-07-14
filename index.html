@@ -7,28 +7,22 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
-      darkMode: 'class',
+      darkMode: 'media',
     }
   </script>
 </head>
 <body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 min-h-screen flex flex-col items-center px-4 py-8 transition-colors duration-300">
 
-  <!-- Mode toggle -->
-  <div class="absolute top-4 right-4">
-    <button id="modeToggle" class="bg-gray-200 dark:bg-gray-700 text-sm px-3 py-1 rounded">
-      Toggle Mode
-    </button>
-  </div>
 
   <!-- Logo & Tagline -->
   <h1 class="text-4xl font-bold mb-2">JustList</h1>
-  <p class="text-lg text-center max-w-md mb-6">The simplest list app you'll actually use. No clutter. Just Lists.</p>
+  <p class="text-lg text-center max-w-md mb-6"> No clutter. Just Lists.</p>
 
   <!-- App mockup -->
   <img src="assets/mockup.png" alt="JustList App Screenshot" class="max-w-xs rounded-lg shadow-lg mb-6">
 
   <!-- Download App button -->
-  <a href="#" class="bg-black text-white px-6 py-3 rounded-lg text-lg font-medium hover:opacity-90 transition mb-8">Download App</a>
+  <a href="#" class="invisible">Download App</a>
 
   <!-- Waitlist form -->
   <form action="https://formspree.io/f/xyzpgozq" method="POST" class="w-full max-w-sm text-center">
