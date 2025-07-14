@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JustList – The Simplest List App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    }
+  </script>
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 min-h-screen flex flex-col items-center px-4 py-8 transition-colors duration-300">
+
+  <!-- Mode toggle -->
+  <div class="absolute top-4 right-4">
+    <button id="modeToggle" class="bg-gray-200 dark:bg-gray-700 text-sm px-3 py-1 rounded">
+      Toggle Mode
+    </button>
+  </div>
+
+  <!-- Logo & Tagline -->
+  <h1 class="text-4xl font-bold mb-2">JustList</h1>
+  <p class="text-lg text-center max-w-md mb-6">The simplest list app you'll actually use. No clutter. Just Lists.</p>
+
+  <!-- App mockup -->
+  <img src="assets/mockup.png" alt="JustList App Screenshot" class="max-w-xs rounded-lg shadow-lg mb-6">
+
+  <!-- Download App button -->
+  <a href="#" class="bg-black text-white px-6 py-3 rounded-lg text-lg font-medium hover:opacity-90 transition mb-8">Download App</a>
+
+  <!-- Waitlist form -->
+  <form action="https://formspree.io/f/xyzpgozq" method="POST" class="w-full max-w-sm text-center">
+    <label for="email" class="block text-sm font-medium mb-2">Join the Waitlist</label>
+    <div class="flex gap-2">
+      <input type="email" name="email" id="email" placeholder="you@example.com" required
+        class="flex-1 px-4 py-2 rounded border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-sm">
+      <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded text-sm hover:bg-blue-700">Join</button>
+    </div>
+  </form>
+
+  <!-- Footer -->
+  <footer class="mt-10 text-xs text-gray-500 dark:text-gray-400">
+    © 2025 JustList. All rights reserved.
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('modeToggle');
+    toggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+    });
+  </script>
+</body>
+</html>
